@@ -1,0 +1,39 @@
+/*.monitor{*/
+/*    border: 1px solid gray;*/
+/*    border-radius: 4px;*/
+/*    padding: 5px;*/
+/*    width: 150px;*/
+/*}*/
+
+/*.posts{*/
+/*    display: flex;*/
+/*}*/
+
+.post{
+    margin: 10px;
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.monitor{
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: auto ;
+}
+
+.card .btn {
+    margin-top: auto ;
+}

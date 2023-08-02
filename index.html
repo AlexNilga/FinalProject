@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    <!--    Icons-->
+    <script src="https://kit.fontawesome.com/824ad7dceb.js" crossorigin="anonymous"></script>
+
+    <script defer src="./script.js"></script>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--Top header-->
+<div class="top-header">
+    <h1>Cool Shop</h1>
+</div>
+
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            Shop
+            <img src="/img/shop_icon.png" alt="Bootstrap" width="30" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="true">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" id="monitors" href="#">Monitors</a></li>
+                        <li><a class="dropdown-item" id="smartphones" href="#">Smartphones</a></li>
+                        <li><a class="dropdown-item" id="cameras" href="#">Cameras</a></li>
+                        <li><a class="dropdown-item" id="laptops" href="#">Laptops</a></li>
+                        <li><a class="dropdown-item" id="gadgets-and-accessories" href="#">Gadgets and accessories</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right mb-2 mb-lg-0">
+                <!--                <li>-->
+                <!--                    <form class="d-flex" role="search">-->
+                <!--                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+                <!--                        <button class="btn btn-outline-success" type="submit">Search</button>-->
+                <!--                    </form>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="basket" href="#">
+                        <i class="fa-solid fa-dolly"></i>
+                        <span class="position-absolute top-0 start-1 translate-middle-x badge rounded-pill bg-danger">
+                                2
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="db/monitorsDB.js"></script>
+<script src="db/laptopsDB.js"></script>
+
+<div class="content">
+    <div class="title"></div>
+    <div class="posts row"></div>
+</div>
+
+
+</body>
+</html>
