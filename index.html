@@ -13,6 +13,8 @@
     <!--    Icons-->
     <script src="https://kit.fontawesome.com/824ad7dceb.js" crossorigin="anonymous"></script>
 
+    <script src="db/monitorsDB.js"></script>
+    <script src="db/laptopsDB.js"></script>
     <script defer src="./script.js"></script>
     <link href="/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -24,7 +26,7 @@
 
 <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="#" onclick="removePosts()">
             Shop
             <img src="/img/shop_icon.png" alt="Bootstrap" width="30" height="30">
         </a>
@@ -35,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#" hidden="hidden">Link</a>
                 </li>
                 <li class="dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -44,9 +46,9 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" id="monitors" href="#">Monitors</a></li>
+                        <li><a class="dropdown-item" id="laptops" href="#">Laptops</a></li>
                         <li><a class="dropdown-item" id="smartphones" href="#">Smartphones</a></li>
                         <li><a class="dropdown-item" id="cameras" href="#">Cameras</a></li>
-                        <li><a class="dropdown-item" id="laptops" href="#">Laptops</a></li>
                         <li><a class="dropdown-item" id="gadgets-and-accessories" href="#">Gadgets and accessories</a>
                         </li>
                         <li>
@@ -70,9 +72,8 @@
                 <li class="nav-item">
                     <a class="nav-link" id="basket" href="#">
                         <i class="fa-solid fa-dolly"></i>
-                        <span class="position-absolute top-0 start-1 translate-middle-x badge rounded-pill bg-danger">
-                                2
-                            <span class="visually-hidden">unread messages</span>
+                        <span class="cartNumber position-absolute top-0 start-1 translate-middle-x badge rounded-pill bg-danger">
+                            0
                         </span>
                     </a>
 
@@ -82,13 +83,11 @@
     </div>
 </nav>
 
-<script src="db/monitorsDB.js"></script>
-<script src="db/laptopsDB.js"></script>
-
 <div class="content">
     <div class="title"></div>
     <div class="posts row gy-2">
     </div>
+
 </div>
 
 
